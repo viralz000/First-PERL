@@ -8,7 +8,10 @@ use feature "switch";
 
 use v5.30.1;
 
-my @b = (1..5);
+print "Input a number: ";
+my $number = <>;
+
+my @b = ($number..10);
  
 print("Before the loop: @b \n");
  
