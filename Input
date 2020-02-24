@@ -1,0 +1,34 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+use v5.30.1;
+
+print "Method 1 or Method 2?[1/2]\n";
+my $method = <>;
+
+if ($method == 1) {
+print "Product Name: ";
+my $product = <STDIN>;
+
+print "Product Price: ";
+my $price = <STDIN>;
+
+print "Product Quantity: ";
+my $quantity = <STDIN>;
+
+my $total_price = $price*$quantity;
+
+print "Total price is: ", $total_price;
+}
+
+elsif ($method == 2) {
+
+print "Method 2 is exit..";
+exit();
+
+}
