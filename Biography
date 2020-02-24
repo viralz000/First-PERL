@@ -1,0 +1,19 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+use v5.30.1;
+
+print "Hellow World\n";
+
+
+my $name = 'Jeremiah';
+my ($age, $place) = (21, "37 Sta. Ana St. Sto. Rosario Village Brgy. Baritan Malabon City");
+
+my $my_info = qq{$name lives on $place and is $age yrs old};
+
+print $my_info;
