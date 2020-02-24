@@ -1,0 +1,19 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+use v5.30.1;
+
+my @b = (1..5);
+ 
+print("Before the loop: @b \n");
+ 
+for(@b){
+ $_ *=  2; 
+}
+ 
+print("After the loop: @b \n");
