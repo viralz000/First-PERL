@@ -1,0 +1,49 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+use v5.30.1;
+
+my $boolean = 1;
+
+while ($boolean) {
+
+print "Method 1 or Method 2?[1/2]: ";
+my $method = <>;
+
+if ($method == 1) {
+print "Product Name: ";
+my $product = <STDIN>;
+
+print "Product Price: ";
+my $price = <STDIN>;
+
+print "Product Quantity: ";
+my $quantity = <STDIN>;
+
+my $total_price = $price*$quantity;
+
+print "Total price is: ", $total_price,"\n";
+
+print "Do you want to try again?[1/2]: ";
+my $input = <>;
+	if ($input=="2") {
+	$boolean = 0;
+	print "Exiting...";
+	}
+	elsif ($input=="1") {
+	#boolean = 1;
+	}
+}
+
+elsif ($method == 2) {
+
+print "Method 2 is exit..";
+exit();
+
+}
+}
