@@ -14,6 +14,13 @@ print "Hellow World\n";
 my $name = 'Jeremiah';
 my ($age, $place) = (21, "37 Sta. Ana St. Sto. Rosario Village Brgy. Baritan Malabon City");
 
-my $my_info = qq{$name lives on $place and is $age yrs old};
+my $my_info = qq{$name lives on $place and is $age yrs old };
 
 print $my_info;
+
+my $bunch_on_info = <<"END";
+BS Computer Engineering 2015-2020
+Upcoming fresh graduate
+END
+
+say $bunch_on_info;
