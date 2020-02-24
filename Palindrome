@@ -6,6 +6,7 @@ use feature 'say';
 
 use feature "switch";
 
+print "Enter a string: ";
 chomp(my $string = <>);
 chomp(my $char = "a");
 
