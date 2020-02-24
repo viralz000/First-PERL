@@ -1,0 +1,20 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+chomp(my $string = <>);
+chomp(my $char = "a");
+
+if ( $string eq reverse($string) ) {
+     print "PALINDROME!\n";
+}
+else {
+     print "NOT A PALINDROME! \n";
+}
+
+my $count = () = $string =~ /\Q$char/g;
+print $count;
