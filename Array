@@ -1,0 +1,24 @@
+use strict;
+use warnings;
+use diagnostics;
+
+use feature 'say';
+
+use feature "switch";
+
+my @my_info = ("Jeremiah", "August", 21, 24);
+
+for (@my_info) {
+	say $_;
+}
+my $sum;
+my $num;
+my @number;
+for (my $i = 0; $i<5; $i++) {
+	print "Enter a number: ";
+	$num = <>;
+	@number[$i] = $num;
+	$sum += $num;
+}
+
+print "The sum is ", $sum;;
